@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>大事件管理后台</title>
+  <link rel="stylesheet" href="assets/lib/layui/css/layui.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo layui-hide-xs layui-bg-black">
+        <img src="assets/images/logo.png" alt="">
+    </div>
+    <!-- 头部区域（可配合layui 已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <!-- 移动端显示 -->
+      <li class="layui-nav-item layui-show-xs-inline layui-hide-sm" lay-header-event="menuLeft">
+        <i class="layui-icon layui-icon-spread-left">
+            个人中心
+        </i>
+      </li>
+      
+      <li class="layui-nav-item layui-hide-xs"><a href=""></a></li>
+      <li class="layui-nav-item layui-hide-xs"><a href=""></a></li>
+      <li class="layui-nav-item layui-hide-xs"><a href=""></a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;"></a>
+        <dl class="layui-nav-child">
+          <dd><a href="">menu 11</a></dd>
+          <dd><a href="">menu 22</a></dd>
+          <dd><a href="">menu 33</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+        <a href="javascript:;">
+          <img src="assets/images/sample2.jpg" class="layui-nav-img">
+          个人中心
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">更换头像</a></dd>
+          <dd><a href="">重置密码</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+        <a href="javascript:;">
+          <i class="layui-icon layui-icon-more-vertical"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree" lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">首页</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">menu 1</a></dd>
+            <dd><a href="javascript:;">menu 2</a></dd>
+            <dd><a href="javascript:;">menu 3</a></dd>
+            <dd><a href="">the links</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">文章管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">文章类别</a></dd>
+            <dd><a href="javascript:;">文章列表</a></dd>
+            <dd><a href="">发表文章2</a></dd>
+          </dl>
+        </li>
+        <i class="layui-icon-usernamr"></i>
+        <li class="layui-nav-item"><a href="javascript:;">个人中心</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;"></div>
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    底部固定区域
+  </div>
+</div>
+<script src="assets/lib/jquery.js"></script>
+<script src="assets/lib/layui/layui.all.js"></script>
+    
+</body>
+</html>
